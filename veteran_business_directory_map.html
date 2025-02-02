@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87f50f210acdc36150875deee3cbfe6e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87f50f210acdc36150875deee3cbfe6e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87f50f210acdc36150875deee3cbfe6e = L.map(
+                "map_87f50f210acdc36150875deee3cbfe6e",
+                {
+                    center: [40.0583, -74.4057],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5afdae39e2d11295abedda413a7d99b3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5afdae39e2d11295abedda413a7d99b3.addTo(map_87f50f210acdc36150875deee3cbfe6e);
+        
+    
+            var marker_19777aed79bf71ae53bd00f0d572637c = L.marker(
+                [39.8379636, -74.19473040000001],
+                {
+}
+            ).addTo(map_87f50f210acdc36150875deee3cbfe6e);
+        
+    
+        var popup_7a4e3077d5d36687a7d0a61766ead92a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_191fc2910beb82905968108d3aee335a = $(`<div id="html_191fc2910beb82905968108d3aee335a" style="width: 100.0%; height: 100.0%;"><b>Vetwork</b><br><a href='https://vetwork.org' target='_blank'>Website</a></div>`)[0];
+                popup_7a4e3077d5d36687a7d0a61766ead92a.setContent(html_191fc2910beb82905968108d3aee335a);
+            
+        
+
+        marker_19777aed79bf71ae53bd00f0d572637c.bindPopup(popup_7a4e3077d5d36687a7d0a61766ead92a)
+        ;
+
+        
+    
+    
+            marker_19777aed79bf71ae53bd00f0d572637c.bindTooltip(
+                `<div>
+                     Vetwork
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
